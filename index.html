@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- メタデータ -->
   <meta name="description" content="FISH (FUN Issue Solving Hackathon) は学生が開発から運用までを経験し、成長するためのハッカソンです。">
   
@@ -52,6 +52,9 @@
       background: #cbd5e0; /* グレーライン */
       transform: translateY(-50%);
     }
+  
+
+
   </style>
 </head>
 <body>
@@ -182,8 +185,15 @@
             参加登録後、Discordへの招待リンクをお送りします。<br>
             締め切りは10月14日までですので、お早めにお申し込みください！
           </p>
-          
-          <iframe class="mx-auto" src="https://docs.google.com/forms/d/e/1FAIpQLSfJ2m9HhPqn-Ek1ohjhp5lBJNPY5zY7Ek2qd-1fdrs-ewFa6Q/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+
+          <style>
+            .google-form-iframe{
+              width: 100%;
+              height: 600px;
+
+            }
+          </style>
+          <iframe class="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfJ2m9HhPqn-Ek1ohjhp5lBJNPY5zY7Ek2qd-1fdrs-ewFa6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
         </div>
       </section>
     </main>
