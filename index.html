@@ -52,6 +52,31 @@
       background: #cbd5e0; /* グレーライン */
       transform: translateY(-50%);
     }
+
+    .header-text {
+      -webkit-text-stroke: 0.5px black; 
+      color: transparent; 
+      font-size: 4rem;
+      text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; /* 白い外枠の効果 */
+    }
+
+    @media screen and (max-width: 767px) {
+      .header-text{
+        font-size: 0.5rem;
+      }
+    }
+
+    .header-background {
+      background-color: #e4e4e4;
+      background-image: url('./images/logo.webp');
+      background-size: contain;   
+      background-position: -70px; 
+      background-repeat: no-repeat; 
+    }
   
 
 
@@ -61,10 +86,11 @@
   <div class="flex flex-col min-h-screen">
     <!-- Header Section -->
     <header class="w-full h-[50vh] relative">
-    <div class="absolute inset-0 bg-[#0017c1] flex items-center justify-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-white text-center">FISH : FUN Issue Solving Hackathon</h1>
+    <div class="absolute inset-0 header-background flex items-center justify-end">
+        <h1 class="text-4xl md:text-6xl font-bold text-black text-end header-text">FISH : FUN Issue Solving Hackathon</h1>
       </div>
     </header>
+  
 
     <!-- Main Content -->
     <main class="flex-grow">
@@ -209,7 +235,6 @@
             .google-form-iframe{
               width: 100%;
               height: 600px;
-
             }
           </style>
           <iframe class="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfJ2m9HhPqn-Ek1ohjhp5lBJNPY5zY7Ek2qd-1fdrs-ewFa6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
