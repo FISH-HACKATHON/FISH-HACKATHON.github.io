@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!-- メタデータ -->
   <meta name="description" content="FISH (FUN Issue Solving Hackathon) は学生が開発から運用までを経験し、成長するためのハッカソンです。">
-  
+
   <!-- Open Graph meta tags for social sharing (Facebook, LinkedIn, etc.) -->
   <meta property="og:title" content="FISH : FUN Issue Solving Hackathon">
   <meta property="og:description" content="FISH (FUN Issue Solving Hackathon) は学生が開発から運用までを経験し、成長するためのハッカソンです。">
@@ -49,48 +50,21 @@
       left: 0;
       right: 0;
       height: 2px;
-      background: #cbd5e0; /* グレーライン */
+      background: #cbd5e0;
+      /* グレーライン */
       transform: translateY(-50%);
     }
-
-    .header-text {
-      -webkit-text-stroke: 0.5px black; 
-      color: transparent; 
-      font-size: 4rem;
-      text-shadow: 
-    -1px -1px 0 #fff,  
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff; /* 白い外枠の効果 */
-    }
-
-    @media screen and (max-width: 767px) {
-      .header-text{
-        font-size: 0.5rem;
-      }
-    }
-
-    .header-background {
-      background-color: #e4e4e4;
-      background-image: url('./images/logo.webp');
-      background-size: contain;   
-      background-position: -70px; 
-      background-repeat: no-repeat; 
-    }
-  
-
-
   </style>
 </head>
+
 <body>
   <div class="flex flex-col min-h-screen">
     <!-- Header Section -->
     <header class="w-full h-[50vh] relative">
-    <div class="absolute inset-0 header-background flex items-center justify-end">
-        <h1 class="text-4xl md:text-6xl font-bold text-black text-end header-text">FISH : FUN Issue Solving Hackathon</h1>
+      <div class="absolute inset-0 bg-[#0017c1] flex items-center justify-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white text-center">FISH : FUN Issue Solving Hackathon</h1>
       </div>
     </header>
-  
 
     <!-- Main Content -->
     <main class="flex-grow">
@@ -104,80 +78,84 @@
             本ハッカソンの最大の特徴は、最優秀チームに賞金に加えて開発費（数十万円…？）を提供し、実際の運用に向けて開発を行っていただける点です✨
           </p>
           <p class="text-lg text-center max-w-2xl mx-auto">
-            「FISH」（FUN Issue Solving Hackathon）運営一同は、開発から運用までを通じて、まるで"出世魚"🐟 のように成長する学生たちを全力でサポートします。アイデアの発案から運用までのプロセスを通して、成長の過程を一緒に楽しみましょう！
+            「FISH」（FUN Issue Solving Hackathon）運営一同は、開発から運用までを通じて、まるで"出世魚"🐟
+            のように成長する学生たちを全力でサポートします。アイデアの発案から運用までのプロセスを通して、成長の過程を一緒に楽しみましょう！
           </p>
         </div>
       </section>
 
-    <!-- Timeline Section -->
-    <section class="py-12 bg-muted">
+      <!-- Timeline Section -->
+      <section class="py-12 bg-muted">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6 text-center">ハッカソン当日までのイベント</h2>
-            <div class="relative timeline flex justify-between items-center py-8 px-4">
+          <h2 class="text-3xl font-bold mb-6 text-center">ハッカソン当日までのイベント</h2>
+          <div class="relative timeline flex justify-between items-center py-8 px-4">
             <!-- Event 1 -->
             <div class="flex flex-col items-center">
-                <div class="relative">
+              <div class="relative">
                 <div class="w-6 h-6 bg-blue-600 rounded-full"></div>
-                </div>
-                <div class="mt-4 text-center">
+              </div>
+              <div class="mt-4 text-center">
                 <p class="text-sm text-gray-600">2024/6/25</p>
                 <p class="font-semibold">ハッカソンテーマ検討会</p>
-                </div>
+              </div>
             </div>
 
             <!-- Event 2 -->
             <div class="flex flex-col items-center">
-                <div class="relative">
+              <div class="relative">
                 <div class="w-6 h-6 bg-blue-600 rounded-full"></div>
-                </div>
-                <div class="mt-4 text-center">
+              </div>
+              <div class="mt-4 text-center">
                 <p class="text-sm text-gray-600">2024/7/17</p>
                 <p class="font-semibold">テーマ最終決定会議</p>
-                </div>
+              </div>
             </div>
 
             <!-- Event 3 -->
             <div class="flex flex-col items-center">
-                <div class="relative">
+              <div class="relative">
                 <div class="w-6 h-6 bg-blue-600 rounded-full"></div>
-                </div>
-                <div class="mt-4 text-center">
+              </div>
+              <div class="mt-4 text-center">
                 <p class="text-sm text-gray-600">2024/10/18 ~ 10/20</p>
                 <p class="font-semibold">ハッカソン開始！</p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
       <!-- Event Details Section -->
-    <section class="py-12 bg-muted">
+      <section class="py-12 bg-muted">
         <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-center">各イベントの様子</h2>
+          <h2 class="text-3xl font-bold mb-6 text-center">各イベントの様子</h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <!-- Event 1: ハッカソンテーマ検討会 -->
             <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-            <!-- 画像 -->
-            <img src="./images/theme_consideration.png" alt="ハッカソンテーマ検討会" class="w-full h-48 object-cover rounded-md mb-4">
-            <!-- タイトル -->
-            <h3 class="text-xl font-semibold mb-2">ハッカソンテーマ検討会</h3>
-            <!-- 説明 -->
-            <p class="text-gray-700 text-center">学生や教員、事務の方々に参加していただきました。皆さんで学内課題について🔥ガチ🔥で議論して頂き、ハッカソン開催に向けて良いスタートが切れました！</p>
+              <!-- 画像 -->
+              <img src="./images/theme_consideration.png" alt="ハッカソンテーマ検討会"
+                class="w-full h-48 object-cover rounded-md mb-4">
+              <!-- タイトル -->
+              <h3 class="text-xl font-semibold mb-2">ハッカソンテーマ検討会</h3>
+              <!-- 説明 -->
+              <p class="text-gray-700 text-center">
+                学生や教員、事務の方々に参加していただきました。皆さんで学内課題について🔥ガチ🔥で議論して頂き、ハッカソン開催に向けて良いスタートが切れました！</p>
             </div>
 
             <!-- Event 2: テーマ最終決定会議 -->
             <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
-            <!-- 画像 -->
-            <img src="./images//final_decision.jpg" alt="テーマ最終決定会議" class="w-full h-48 object-cover rounded-md mb-4">
-            <!-- タイトル -->
-            <h3 class="text-xl font-semibold mb-2">テーマ最終決定会議</h3>
-            <!-- 説明 -->
-            <p class="text-gray-700 text-center">運営や教員、事務の方々によるミーティングが行われ、学内の課題について熱い議論が交わされました！先生や職員方ならでは意見も多数上がり、テーマ決めに繋がる非常に実りのある会となりました。</p>
+              <!-- 画像 -->
+              <img src="./images//final_decision.jpg" alt="テーマ最終決定会議" class="w-full h-48 object-cover rounded-md mb-4">
+              <!-- タイトル -->
+              <h3 class="text-xl font-semibold mb-2">テーマ最終決定会議</h3>
+              <!-- 説明 -->
+              <p class="text-gray-700 text-center">
+                運営や教員、事務の方々によるミーティングが行われ、学内の課題について熱い議論が交わされました！先生や職員方ならでは意見も多数上がり、テーマ決めに繋がる非常に実りのある会となりました。</p>
             </div>
+          </div>
         </div>
-        </div>
-    </section>
+      </section>
 
 
       <!-- Schedule Section -->
@@ -202,24 +180,24 @@
       </section>
 
       <!-- place Section-->
-       <section class="py-12 bg-muted">
+      <section class="py-12 bg-muted">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-6 text-center">場所</h2>
           <p class="text-lg text-center max-w-2xl mx-auto mb-6">
             ハッカソンの開会式、開発機関の場所等については、後日追加いたします。
           </p>
         </div>
-       </section>
+      </section>
 
-       <!-- Prize Money Section-->
-        <section class="py-12 bg-background">
-          <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6 text-center">賞金</h2>
-            <p class="text-lg text-center max-w-2xl mx-auto mb-6">
-              賞金につきましては、後日追加いたします。
-            </p>
-          </div>
-        </section>
+      <!-- Prize Money Section-->
+      <section class="py-12 bg-background">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-6 text-center">賞金</h2>
+          <p class="text-lg text-center max-w-2xl mx-auto mb-6">
+            賞金につきましては、後日追加いたします。
+          </p>
+        </div>
+      </section>
 
 
       <!-- Registration Section -->
@@ -232,15 +210,35 @@
           </p>
 
           <style>
-            .google-form-iframe{
+            .google-form-iframe {
               width: 100%;
               height: 600px;
+
             }
           </style>
-          <iframe class="google-form-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfJ2m9HhPqn-Ek1ohjhp5lBJNPY5zY7Ek2qd-1fdrs-ewFa6Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+          <iframe class="google-form-iframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfJ2m9HhPqn-Ek1ohjhp5lBJNPY5zY7Ek2qd-1fdrs-ewFa6Q/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
         </div>
       </section>
     </main>
+
+    <!-- X Section -->
+    <section class="py-12 bg-background">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Twitter</h2>
+        <div class="flex justify-center">
+          <a class="twitter-timeline" data-width="600" data-height="800"
+            href="https://twitter.com/FUNISHackathon?ref_src=twsrc%5Etfw">
+            Tweets by FUNISHackathon
+          </a>
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+
+
+
 
     <!-- Footer -->
     <footer class="bg-primary text-primary-foreground py-6">
@@ -250,4 +248,5 @@
     </footer>
   </div>
 </body>
+
 </html>
