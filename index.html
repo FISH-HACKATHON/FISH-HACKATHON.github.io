@@ -54,6 +54,32 @@
       /* グレーライン */
       transform: translateY(-50%);
     }
+
+    .header-text {
+      -webkit-text-stroke: 0.5px black; 
+      color: transparent; 
+      font-size: 4rem;
+      text-shadow: 
+    -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; /* 白い外枠の効果 */
+    }
+
+    @media screen and (max-width: 767px) {
+      .header-text{
+        font-size: 0.5rem;
+      }
+    }
+
+    .header-background {
+      background-color: #e4e4e4;
+      background-image: url('./images/logo.webp');
+      background-size: contain;   
+      background-position: -70px; 
+      background-repeat: no-repeat; 
+    }
+
     .sponsor-logos {
       display: flex;
       justify-content: center;
@@ -67,6 +93,8 @@
       max-width: 150px; /* ロゴの最大幅 */
       height: auto; /* 高さを自動調整 */
     }
+  
+
 
   </style>
 </head>
@@ -203,42 +231,30 @@
         </div>
       </section>
 
-      <!-- Prize Money Section-->
-      <section class="py-12 bg-background">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-6 text-center">賞金</h2>
-          <p class="text-lg text-center max-w-2xl mx-auto mb-6">
-            最優秀賞5万円、優秀賞3万円です。チーム数などに応じて、特別賞等も検討しています。
-            <br>また、すべての参加者に参加賞を用意しています！
-          </p>
-        </div>
-      </section>
-
-      <!-- place Section-->
-      <section class="py-12 bg-muted">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-6 text-center">運用に向けた開発</h2>
-          <p class="text-lg text-center max-w-2xl mx-auto mb-6">
-            ハッカソンで選抜されたチームは、大学とチームの双方が合意した場合、運用に向けた開発を進めることができます。開発にあたっては、賞金とは別に開発費を支給します。
-            運用開発の期間は3月までを予定しており、ハッカソン運営チームが万全のサポート体制でバックアップいたします。
-          </p>
-        </div>
-      </section>
-
-      <!--Sponsor　Section-->
-      <section class="py-12 bg-background">
-        <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-6 text-center">協賛</h2>
-          <div class="sponsor-logos">
-            <img src="./images/SEC.png" alt="SEC" class="sponsor-logo">
-            <img src="./images/NDS_LOGO_.png" alt="NDS" class="sponsor-logo">
-            <img src="./images/freee_logo.png" alt="freee" class="sponsor-logo">
+       <!-- Prize Money Section-->
+        <section class="py-12 bg-background">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">賞金</h2>
+            <p class="text-lg text-center max-w-2xl mx-auto mb-6">
+              賞金につきましては、後日追加いたします。
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
+        <section class="py-12 bg-muted">
+          <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-6 text-center">協賛</h2>
+            
+            <div class="sponsor-logos">
+              <img src="./images/freee_logo_corporate_logo.png" alt="freee" class="sponsor-logo">
+              <img src="./images/NDS_LOGO_.png" alt="NDS" class="sponsor-logo">
+              <img src="./images/SEC.png" alt="SEC" class="sponsor-logo">
+              <!-- 必要な数だけ企業ロゴを追加 -->
+            </div>
+          </div>
+        </section>
       <!-- Registration Section -->
-      <section class="py-12 bg-muted">
+      <section class="py-12 bg-background">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-6 text-center">参加用登録フォーム</h2>
           <p class="text-lg text-center max-w-2xl mx-auto mb-6">
@@ -272,23 +288,6 @@
         </div>
       </section>
     </main>
-
-    <!-- X Section -->
-    <section class="py-12 bg-background">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-6 text-center">Twitter</h2>
-        <div class="flex justify-center">
-          <a class="twitter-timeline" data-width="600" data-height="800"
-            href="https://twitter.com/FUNISHackathon?ref_src=twsrc%5Etfw">
-            Tweets by FUNISHackathon
-          </a>
-        </div>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </section>
-
-
-
 
     <!-- Footer -->
     <footer class="bg-primary text-primary-foreground py-6">
