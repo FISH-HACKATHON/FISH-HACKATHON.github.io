@@ -93,8 +93,36 @@
       max-width: 150px; /* ロゴの最大幅 */
       height: auto; /* 高さを自動調整 */
     }
-  
 
+    /* 賞金リストのスタイル */
+    .prize-list ul {
+      list-style: none;
+      padding: 0;
+    } 
+
+    .prize-items li {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+      padding: 20px;
+      font-size: 1.2rem;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+
+    /* リストアイテムのホバー時のスタイル 
+    .prize-items li:hover {
+      background-color: #f1f1f1;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }*/
+
+    /* 強調されたテキストのスタイル（賞名など） */
+    .prize-items li strong {
+      color: #e67e22;
+      font-size: 1.4rem;
+    }
 
   </style>
 </head>
@@ -236,7 +264,17 @@
           <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-6 text-center">賞金</h2>
             <p class="text-lg text-center max-w-2xl mx-auto mb-6">
-              賞金につきましては、後日追加いたします。
+              以下の賞が用意されています<br>
+            </p>
+            <div class="max-w-2xl mx-auto prize-list">
+              <ul class="prize-items text-lg">
+                <li><strong>最優秀賞</strong>: 1チーム、5万円</li>
+                <li><strong>企業賞</strong>: 企業様からの特別賞</li>
+                <li><strong>参加賞</strong>: 全員に参加賞あり</li>
+              </ul>
+            </div>
+            <p class="text-lg text-left max-w-2xl mx-auto mb-6">
+              チーム数が多ければ、優秀賞も追加されるかも・・・<br>
             </p>
           </div>
         </section>
